@@ -1,0 +1,28 @@
+p{
+    color: green;
+}
+body{
+    font-size: 100px;
+}
+/* #para1{
+    background-color: aquamarine;
+    
+} */
+
+#para2{
+    /* background-color: aqua ; */
+    color: red;
+    font-size: 2vh;
+}
+
+.para3{
+    /* background-color: violet; */
+    color: violet;
+    font-size: 100%;
+}
+
+.border{
+    border: 5px double red;
+    font-size: 39px;
+    border-radius: 10px;
+}
