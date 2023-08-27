@@ -24,9 +24,10 @@
     position: sticky;
     background-color: orange;
     font-size: 20px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     top: 0px;
+    left: 490px;
 }
 
 .relative2{
@@ -44,7 +45,7 @@ font-size: 20px;
     font-size: 20px;
     width: 900px;
     height: 400px;
-
+    left: 130px;
 }
 
 .absolute{
