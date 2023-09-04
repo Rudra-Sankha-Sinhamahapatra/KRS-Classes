@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.inner1{
+    background-color: pink;
+    height: 25vh;
+    width: 30vw;
+}
+
+.inner2{
+    background-color: blue;
+    height: 25vh;
+    width: 30vw;
+}
+.inner3{
+    background-color: yellow;
+    height: 25vh;
+    width: 30vw;
+}
+.inner4{
+    background-color: red;
+    height: 25vh;
+    width: 30vw;
+}
+.outer{
+    background-color: green;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;   
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
