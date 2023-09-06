@@ -19,3 +19,4 @@ console.log(ob["5/5"]); //to access complex opertors
 //     [5,2]:
 //     ["s","y"]
 // }
+
