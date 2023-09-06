@@ -26,7 +26,24 @@
 //     console.log("button Clicked");
 // }
 
-const fun=()=> {
-  console.log("arrow function");
+// const fun=()=> {
+//   console.log("arrow function");
+// }
+// fun();
+
+
+//hoisting
+
+// x=1;
+// console.log("x= "+x);
+// var x;
+
+var x=7;
+getName();
+console.log(getName);
+function getName(){
+    console.log("Namaste JS");
 }
-fun();
+
+
+console.log(x);
