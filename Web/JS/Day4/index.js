@@ -38,6 +38,7 @@
 // console.log("x= "+x);
 // var x;
 
+
 var x=7;
 getName();
 console.log(getName);
