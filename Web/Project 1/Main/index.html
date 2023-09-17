@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="l">
+    <form action="" name="contactForm" onsubmit="return validSub()">
+        <h2>Application Form</h2>
+        <div class="row">
+            <label for="name">Full Name</label>
+         <input type="text" name="name" id="nameId" >
+         <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <label for="email">Email Address</label>
+         <input type="email" name="email" id="emailId">
+         <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+            <label for="mobile">Mobile Number</label>
+         <input type="number" name="mobile" id="mobileId">
+         <div class="error" id="mobileErr"></div>
+        </div>
+        <div class="row">
+            <label for="country">Country</label>
+            <select name="country" id="countryId">
+                <option value="" >Select</option>
+                <option value="Australia">Australia</option>
+                <option value="USA">USA</option>
+                <option value="India">India</option>
+                <option value="England">England</option>
+            </select>
+            <div class="error" id="countryErr"></div>
+        </div>
+        <div class="row">
+            <label for="gender">Gender</label>
+            <div class="radio_option">
+                <label for="male"> <input type="radio" name="gender" value="male" id="genderId">Male</label>
+                <label for="female"> <input type="radio" name="gender" value="female" id="genderId">Female</label>
+            </div>
+            <div class="error" id="genderErr"></div>
+        </div>
+    </form>
+    <div class="row">
+        <button onclick="submit()">Submit</button>
+    </div>
+  </div>
+   
+</body>
+<script src="./script.js"></script>
+</html>

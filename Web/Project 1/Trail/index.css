@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.border{
+    width: fit-content;
+    border: 0.25px solid black;
+    padding: 40px;
+}
+
+.mainheading{
+    text-decoration: underline;
+}
+
+.input{
+    height: 30px;
+    width: 500px;
+}
+
+.contentdiv{
+    height: 30px;
+    width: 500px;
+    border: 0.25px solid  black;
+}
+
+.innerdiv{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.submitbutton{
+    height: 30px;
+    width: 500px;
+    background-color: blue;
+    color: white;
+}
