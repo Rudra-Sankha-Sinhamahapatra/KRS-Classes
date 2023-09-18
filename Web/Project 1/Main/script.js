@@ -6,6 +6,7 @@ function submit(){
         document.getElementById("nameErr").innerHTML="Error";
     }
     else{
+        document.getElementById("nameErr").innerHTML="";
         console.log("Name --> "+name);
     }
 
@@ -15,15 +16,26 @@ function submit(){
         document.getElementById("emailErr").innerHTML="Error";
     }
     else{
-        console.log("Name --> "+name);
+        var atIndex=email.indexOf("@");
+        var dotIndex=email.lastIndexOf(".");
+
+        if(atIndex<=0 || dotIndex<= atIndex || dotIndex === email.length -1){
+            console.log("error");
+            document.getElementById("emailErr").innerHTML="Error";
+        }
+        else{
+         console.log("Email-->"+email);    
+         document.getElementById("emailErr").innerHTML="";
+        }
     }
     let mobile=document.getElementById("mobileId").value;
-    if(mobile=== ""){
+            if(mobile=== ""|| mobile.length!==10){
         console.log("Error");
         document.getElementById("mobileErr").innerHTML="Error";
     }
     else{
-        console.log("Name --> "+name);
+        document.getElementById("mobileErr").innerHTML="";
+        console.log("Mobile Number --> "+mobile);
     }
     let country=document.getElementById("countryId").value;
     console.log(country);
@@ -32,15 +44,37 @@ function submit(){
         document.getElementById("countryErr").innerHTML="Error";
     }
     else{
-        console.log("Name --> "+name);
+        document.getElementById("countryErr").innerHTML="";
+        console.log("Country --> "+country);
     }
-    let gender=document.getElementById("countryId").value;
-    console.log(gender);
-    if(gender=== ""){
+    // console.log(document.getElementById("genderId").value);
+    let gender=document.getElementsByName("gender");
+    let genderval="";
+    for(let i=0;i<gender.length;i++){
+        // console.log(gender[i].checked);
+        if(gender[i].checked===true){
+            // console.log(gender[i].value);
+            genderval=gender[i].value;
+            
+        }
+    }
+    if(genderval===""){
         console.log("Error");
         document.getElementById("genderErr").innerHTML="Error";
     }
     else{
-        console.log("Name --> "+name);
+            console.log("Gender-->"+genderval);
+            alert(`Name --> ${name}
+            Email--> ${email}
+            Mobile Number--> ${mobile}
+            Country--> ${country}
+            Gender--> ${genderval}
+
+            `);
+            // alert("Email-->"+email); 
+            // alert("Gender-->"+genderval);
+            document.getElementById("genderErr").innerHTML="";
+        }
     }
-}
+  
+    
