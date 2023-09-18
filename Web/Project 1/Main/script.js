@@ -71,8 +71,6 @@ function submit(){
             Gender--> ${genderval}
 
             `);
-            // alert("Email-->"+email); 
-            // alert("Gender-->"+genderval);
             document.getElementById("genderErr").innerHTML="";
         }
     }
