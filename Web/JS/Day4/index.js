@@ -90,14 +90,22 @@ function clickMe() {
  }
 
  document.getElementById("tryit").addEventListener("click",displayDate);
-
+var funt=true;
  function displayDate(){
+   if(funt===true){
     document.getElementById("demo").innerHTML= Date();
+   funt=false;
+   }
+
+else if(funt===false){
+     document.getElementById("demo").innerHTML="Hello";
+     funt=true;
+   }
     console.log("clicked");
-    document.getElementById("tryit").removeEventListener("click",displayDate);
+   //  document.getElementById("tryit").removeEventListener("click",displayDate);
     document.getElementById("tryit").addEventListener("click",myFun);
  }
 
  function myFun(){
-    alert("Hello World");
+    alert("Button clicked Thank You!");
  }
