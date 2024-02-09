@@ -4,8 +4,21 @@
     grid-template-rows: 200px 200px;
     height: 200px;
     width: 200px;
-    border: 5px solid black;
+    margin-top: 40px;
 }
+
+.magic{
+background-color: aquamarine;
+color: black;
+font-style: italic;
+font-weight: bold;
+padding: 10px;
+text-align: center;
+display: flex;
+margin-left: 100px;
+}
+
+
 
 body{
     display: flex;
@@ -33,8 +46,9 @@ border: 2px solid black;
 .red{
     background-color: red;
     border: 2px solid black;
- 
+    
 }
+
 
 .green:hover{
     background-color: white;
@@ -51,3 +65,10 @@ border: 2px solid black;
 .red:hover{
     background-color: white;
 }
+
+.green,.blue,.red,.yellow{
+    transition: transform 0.3s  ease-in-out;
+}
+
+.green:hover,.blue:hover,.yellow:hover,.red:hover{
+    transform: translate3d(0,-10px,0)}
